@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -6,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { MusicComponent } from './music/music.component';
 import { MusicListComponent } from './music-list/music-list.component';
 import { LibrairieComponent } from './librairie/librairie.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { LibrairieComponent } from './librairie/librairie.component';
     HeaderComponent,
     MusicComponent,
     MusicListComponent,
-    LibrairieComponent
+    LibrairieComponent,
+    SearchComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
